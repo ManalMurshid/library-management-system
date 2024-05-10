@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    tools:context=".Books">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/library_logo"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/your_logo_image" />
+
+        <TextView
+            android:id="@+id/library_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/library_logo"
+            android:layout_alignTop="@id/library_logo"
+            android:layout_alignBottom="@id/library_logo"
+            android:layout_marginStart="16dp"  android:text="Librivox Library Management System"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books details"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/publisher_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Publisher Name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new book" />
+
+
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Book" />
+
+    <Button
+        android:id="@+id/read_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Available books" />
+
+
+
+</LinearLayout>
